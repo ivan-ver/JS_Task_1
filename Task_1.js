@@ -1,5 +1,7 @@
 sum_button.onclick = function () {
-    let a = Number(document.getElementById("number_1").value);
-    let b = Number(document.getElementById("number_2").value);
-    alert(a+b);
+    let a = document.getElementById("number_1").value;
+    let b = document.getElementById("number_2").value;
+    let maxLen = a.length > b.length ? a.length:a.length;
+    let result = ((Number(a)*(10**maxLen))+(Number(b)*(10**maxLen)))/(10**maxLen);
+    alert(result);
 };
